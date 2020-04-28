@@ -12,7 +12,7 @@ class main:
 
     def services(self):
 
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/sap-coe-devops-test-e30e34abb448.json'
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'account_deleter'
 
         projects = os.getenv("Project_id")
         
