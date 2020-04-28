@@ -59,7 +59,7 @@ class main:
 
                 #request.execute()
                 
-                request = main.compute_service.images().get(project=project_id, image=c0-common-gce-gpu-image-20200128)
+                request = service.projects().get(project=project_id)
                 response = request.execute()
 
                 print("Project is now shutdown")
