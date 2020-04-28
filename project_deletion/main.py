@@ -52,7 +52,7 @@ class main:
 
             else:
 
-                print("Project is getting  shutdown .......................")
+                print(project_id)
 
                 request = main.service.projects().delete(projectId=project_id)
 
