@@ -9,7 +9,6 @@ class main:
     credentials = GoogleCredentials.get_application_default()
 
     service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
-    compute_service = discovery.build('compute', 'v1', credentials=credentials)
 
     def services(self):
 
@@ -59,8 +58,11 @@ class main:
 
                 #request.execute()
                 
-                request = main.compute_service.projects().get(project=project_id)
-                response = request.execute()
+                from project_deletion.projectdeletion import projectdeletion
+                
+                obj_projectdeletion = projectdeletion()
+                
+                obj_projectdeletion.projectdeletion(project_id)
 
                 print("Project is now shutdown")
 
