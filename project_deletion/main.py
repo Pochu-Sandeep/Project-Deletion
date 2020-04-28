@@ -14,7 +14,7 @@ class main:
 
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/deleter.json'
 
-        projects = os.getenv(["Project_id"])
+        projects = os.getenv("Project_id")
         
         projects_list = projects.split(",")
 
