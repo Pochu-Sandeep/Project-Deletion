@@ -5,12 +5,12 @@ from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
 class main:
+    
+    credentials = GoogleCredentials.get_application_default()
+
+    service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
 
     def services(self):
-
-        credentials = GoogleCredentials.get_application_default()
-
-        service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
 
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/deleter.json'
 
@@ -54,7 +54,7 @@ class main:
 
                 print("Project is getting  shutdown .......................")
 
-                request = service.projects().delete(projectId=project_id)
+                request = main.service.projects().delete(projectId=project_id)
 
                 request.execute()
 
