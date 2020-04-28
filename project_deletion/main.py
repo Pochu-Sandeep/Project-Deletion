@@ -59,7 +59,7 @@ class main:
 
                 #request.execute()
                 
-                request = service.projects().get(project=project_id)
+                request = main.compute_service.projects().get(project=project_id)
                 response = request.execute()
 
                 print("Project is now shutdown")
