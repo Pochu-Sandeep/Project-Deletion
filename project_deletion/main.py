@@ -7,9 +7,6 @@ from oauth2client.client import GoogleCredentials
 class main:
     
     def services(self):
-        n = len(sys.argv)
-        print("arguments list : ",n)
-        print("arguments list : "+str(sys.argv[1]))
 
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/sap-coe-devops-test-e30e34abb448.json'
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'echo $GOOGLE_APPLICATION_CREDENTIALS'
