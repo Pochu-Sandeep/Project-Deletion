@@ -32,7 +32,7 @@ class disks:
                 
                 break
         
-        if disks_exist:
+        if disks_exist == 1:
             
             print("Disks exists in project please delete ......." +project_id)
         
