@@ -33,6 +33,8 @@ class computevm:
                 break
                     
         if instance_exist == 1:
+         
+            pprint(instance_exist)
             
             print("Instances exists in project please delete ........." +project_id)
                     
