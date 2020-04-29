@@ -39,8 +39,6 @@ class computevm:
         else:
                     
             print("Instances doesn't exists in the project")
-        
-        print(instance_exist)
                        
         return instance_exist
                 
