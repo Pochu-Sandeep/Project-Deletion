@@ -13,7 +13,7 @@ class main:
 
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/sap-coe-devops-test-e30e34abb448.json'
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'echo $GOOGLE_APPLICATION_CREDENTIALS'
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = sys.argv[2]
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = sys.argv[1]
 
         projects = os.getenv("Project_id")
         
