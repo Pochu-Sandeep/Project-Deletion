@@ -34,11 +34,13 @@ class computevm:
                     
         if instance_exist == 1:
          
-            pprint(instance_exist)
+            print(instance_exist)
             
             print("Instances exists in project please delete ........." +project_id)
                     
         else:
+            
+            print(instance_exist)
                     
             print("Instances doesn't exists in the project " +project_id)
                        
