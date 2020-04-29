@@ -34,11 +34,11 @@ class disks:
         
         if disks_exist:
             
-            print("Disks exists in project please delete ......." +project_id)
+            print("Disks exists in project please delete")
         
         else:
             
-            print("Disks doesn't exists in the project ......." +project_id)
+            print("Disks doesn't exists in the project")
       
         return disks_exist
  
