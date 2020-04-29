@@ -31,20 +31,18 @@ class computevm:
             if len(instance_details) > 0:
                 
                 instance_exists =  True  
+               
+                print("Instances exists in project please delete ........." +project_id)
                 
                 break
-                    
-        if instance_exist == 1:
-         
-            print(instance_exist)
+                  
+            else:
             
-            print("Instances exists in project please delete ........." +project_id)
+               print(instance_exist)
                     
-        else:
-            
-            print(instance_exist)
-                    
-            print("Instances doesn't exists in the project " +project_id)
+               print("Instances doesn't exists in the project " +project_id)
+        
+        print(instance_exist)
                        
         return instance_exist
                 
