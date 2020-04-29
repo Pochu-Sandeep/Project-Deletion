@@ -24,10 +24,10 @@ class vpn:
             
             vpn_exist = True
             
-            print("VPN exists in project, please delete ..... " +project_id)
+            print("VPN exists in project, please delete")
             
         else:
             
-            print("VPN does not exists in the project " +project_id)
+            print("VPN does not exists in the project ")
           
         return vpn_exist
