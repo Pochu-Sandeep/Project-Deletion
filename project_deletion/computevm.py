@@ -20,7 +20,7 @@ class computevm:
                  
             zone_name=zone_details.get("name")
             
-            pprint(zone_name)
+            print(zone_name)
             
             instance_request = service.instances().list(project = project_id, zone = zone_name)
             
