@@ -5,13 +5,15 @@ from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
 class main:
-    print("arguments list : "+len(sys.argv))
-    print("arguments list : "+str(sys.argv))
+    
     #credentials = GoogleCredentials.get_application_default()
 
     #service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
 
     def services(self):
+        
+        print("arguments list : "+len(sys.argv))
+        print("arguments list : "+str(sys.argv))
 
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/sap-coe-devops-test-e30e34abb448.json'
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'echo $GOOGLE_APPLICATION_CREDENTIALS'
