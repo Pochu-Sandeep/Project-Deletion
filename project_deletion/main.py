@@ -53,10 +53,6 @@ class main:
             else:
 
                 print(project_id)
-
-                #request = service.projects().delete(projectId=project_id)
-
-                #request.execute()
                 
                 from project_deletion.projectdeletion import projectdeletion
                 
