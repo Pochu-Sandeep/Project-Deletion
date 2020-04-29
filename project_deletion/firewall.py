@@ -24,10 +24,10 @@ class firewall:
             
             firewall_exist = True
             
-            print("Firewalls exists in project, please delete ......" +project_id)
+            print("Firewalls exists in project, please delete")
             
         else:
             
-            print("Firewalls doesn't exist in the project " +project_id)
+            print("Firewalls doesn't exist in the project")
             
         return firewall_exist
