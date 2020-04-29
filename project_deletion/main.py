@@ -6,10 +6,6 @@ from oauth2client.client import GoogleCredentials
 
 class main:
     
-    #credentials = GoogleCredentials.get_application_default()
-
-    #service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
-
     def services(self):
         
         print("arguments list : "+len(sys.argv))
