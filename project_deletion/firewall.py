@@ -8,7 +8,7 @@ class firewall:
         
         credentials = GoogleCredentials.get_application_default()
         
-        service = discovery.build('compute', 'v1', credentials=credentials)
+        service = discovery.build('compute', 'v1', credentials = credentials)
         
         firewall_exist = False
         
