@@ -20,8 +20,6 @@ class computevm:
                  
             zone_name = zone_details.get("name")
             
-            print(zone_name)
-            
             instance_request = service.instances().list(project = project_id, zone = zone_name)
             
             instance_response = instance_request.execute()
@@ -36,11 +34,11 @@ class computevm:
                
         if instance_exist:
             
-            print("Instances exists in project please delete ........." +project_id)
+            print("Instances exists in project please delete")
                   
         else:
                     
-            print("Instances doesn't exists in the project " +project_id)
+            print("Instances doesn't exists in the project")
         
         print(instance_exist)
                        
