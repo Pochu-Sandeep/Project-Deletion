@@ -34,17 +34,17 @@ class computevm:
                 
                 break
                
-         if instance_exist ==1:
+        if instance_exist ==1:
             
             print("Instances exists in project please delete ........." +project_id)
                   
-         else:
+        else:
                     
             print("Instances doesn't exists in the project " +project_id)
         
-        print(instance_exist)
+    print(instance_exist)
                        
-        return instance_exist
+    return instance_exist
                 
             
                     
