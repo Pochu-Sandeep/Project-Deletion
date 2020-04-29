@@ -8,7 +8,7 @@ class main:
     
     def services(self):
         
-        print("arguments list : "+len(sys.argv))
+        #print("arguments list : "+len(sys.argv))
         print("arguments list : "+str(sys.argv[0]))
 
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/sandeep_pochu/sap-coe-devops-test-e30e34abb448.json'
