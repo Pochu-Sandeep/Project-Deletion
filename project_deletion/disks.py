@@ -8,7 +8,7 @@ class disks:
         
         credentials = GoogleCredentials.get_application_default()
         
-        service = discovery.build('compute', 'v1', credentials=credentials)
+        service = discovery.build('compute', 'v1', credentials = credentials)
         
         disks_exist = False
         
