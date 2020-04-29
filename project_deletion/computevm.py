@@ -8,7 +8,7 @@ class computevm:
         
         credentials = GoogleCredentials.get_application_default()
         
-        service = discovery.build('compute', 'v1', credentials=credentials)
+        service = discovery.build('compute', 'v1', credentials = credentials)
         
         instance_exist = False
             
@@ -18,7 +18,7 @@ class computevm:
                 
         for zone_details in zone_response['items']:
                  
-            zone_name=zone_details.get("name")
+            zone_name = zone_details.get("name")
             
             print(zone_name)
             
@@ -34,7 +34,7 @@ class computevm:
                 
                 break
                
-        if instance_exist ==1:
+        if instance_exist:
             
             print("Instances exists in project please delete ........." +project_id)
                   
